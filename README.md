@@ -3,8 +3,8 @@
 Este repositório contém uma série de exercícios de JavaScript para praticar conceitos fundamentais da linguagem.  
 Antes de começar, certifique-se de que você possui as seguintes ferramentas instaladas:
 
-- Node.js (versão 14.x ou superior)
-- Um editor de código, como Visual Studio Code
+- Node.js (versão 14.x ou superior). Para instalar o Node.js, visite [nodejs.org](https://nodejs.org/) e siga as instruções de instalação para o seu sistema operacional.
+- Um editor de código, como Visual Studio Code.
 
 ## Configuração
 
