@@ -1,9 +1,6 @@
 # Exercícios de JavaScript
 
 Este repositório contém uma série de exercícios de JavaScript para praticar conceitos fundamentais da linguagem.
-
-## Pré-requisitos
-
 Antes de começar, certifique-se de que você possui as seguintes ferramentas instaladas:
 
 - Node.js (versão 14.x ou superior)
