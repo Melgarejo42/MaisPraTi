@@ -26,21 +26,3 @@ Para executar os exercícios:
 2. Execute o arquivo JavaScript desejado usando o Node.js:
    node nome-do-arquivo.js
 3. Siga as instruções que aparecerão no terminal para completar os exercícios.
-
-## Dicas
-
-- Caso o exercício utilize o pacote prompt-sync para leitura de entrada, certifique-se de que ele está instalado no diretório do projeto:
-   npm install prompt-sync
-
-## Problemas Comuns
-
-- Erro "command not found": Certifique-se de que o Node.js está corretamente instalado e que você está na pasta correta.
-- Problemas com permissões: Tente rodar o terminal como administrador ou use sudo no Linux/Mac.
-
-## Contribuição
-
-Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a MIT License.
