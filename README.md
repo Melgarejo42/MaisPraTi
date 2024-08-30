@@ -1,6 +1,6 @@
 # Exercícios de JavaScript
 
-Este repositório contém uma série de exercícios de JavaScript para praticar conceitos fundamentais da linguagem.
+Este repositório contém uma série de exercícios de JavaScript para praticar conceitos fundamentais da linguagem.  
 Antes de começar, certifique-se de que você possui as seguintes ferramentas instaladas:
 
 - Node.js (versão 14.x ou superior)
@@ -12,8 +12,8 @@ Antes de começar, certifique-se de que você possui as seguintes ferramentas in
 2. Navegue até o diretório onde os exercícios estão localizados:
    cd caminho/para/o/diretório/dos/exercícios
 
-3. Instale as dependências (caso necessário):
-   npm install
+3. Instale as dependências necessárias. Para instalar o pacote `prompt-sync`, execute o seguinte comando no terminal:
+   npm install prompt-sync
 
 ## Execução dos Exercícios
 
