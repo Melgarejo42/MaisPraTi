@@ -1,4 +1,4 @@
-# Exercícios de JavaScript - Lista de Exercicios 02
+# Exercícios de JavaScript
 
 Este repositório contém uma série de exercícios de JavaScript para praticar conceitos fundamentais da linguagem.  
 Antes de começar, certifique-se de que você possui as seguintes ferramentas instaladas:
