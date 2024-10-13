@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de usuário</title>
+
+    <style>
+        label {
+            color: black;
+            
+        }
+        body {
+            font-family: 'Verdana', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGbSu8S5_YegmjMUOkGp6Xcym9DMbQIaKKA&s'); background-size: cover; background-repeat: 1; background-position: center;">
+
+    <label for="userInput" font="">Nome completo:</label><br>
+    <input type="text" id="userInput" name="userInput"><br>
+
+    <label for="birthDate">Data de nascimento:</label><br>
+    <input type="text" id="birthDate" placeholder="DD/MM/YYYY" pattern="\d{2}/\d{2}/\d{4}" title="Please enter a date in the format dd/mm/yyyy" name="userInput"><br>
+
+    <label for="gender">Sexo:</label><br>
+    <select id="gender" name="gender">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        </select><br>
+
+    <label for="userInput">Estado civil:</label><br>
+    <input type="text" id="userInput" name="userInput"><br>
+
+    <label for="userInput">Profissão:</label><br>
+    <input type="text" id="userInput" name="userInput"><br><br>
+
+    <button type="submit">Submit</button>
+
+</body>
+</html>
