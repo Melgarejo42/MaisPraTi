@@ -15,10 +15,10 @@ body {
 }
 
 header {
-    display: flex; /* Add this */
-    flex-direction: column; /* Align items in a column */
-    justify-content: flex-start; /* Center the items vertically */
-    align-items: center; /* Center the items horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     background-image: url('https://t4.ftcdn.net/jpg/02/69/47/89/360_F_269478900_EEEXPJa7ohrxraL6L6V2GlmltteALheQ.jpg');
     background-color: white;
@@ -60,9 +60,9 @@ header {
 nav ul {
     list-style: none;
     padding: 20px;
-    display: flex; /* Mantém os itens em linha */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    justify-content: center; /* Centraliza os itens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
 nav li {
@@ -76,15 +76,15 @@ nav li {
     }
 
     nav ul {
-        flex-direction: row; /* Mantenha na horizontal */
-        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
-        align-items: center; /* Centraliza os itens */
-        justify-content: center; /* Centraliza os itens */
-        padding: 20px 20; /* Adiciona padding ao redor da lista */
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+        padding: 20px 20;
     }
     
     nav li {
-        margin-bottom: 27px; /* Adiciona margem entre os itens */
+        margin-bottom: 27px; 
     }
 
     section {
@@ -198,6 +198,6 @@ img {
 
 nav {
     display: flex;
-    justify-content: center; /* Centraliza a navegação */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
