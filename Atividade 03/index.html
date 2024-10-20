@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miau-Au - Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Miau-Au - Loja Virtual</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Miau-Au Box</a></li>
+                        <li><a href="#">Nossas lojas</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Bem-vindo ao Miau-Au!</h2>
+            <p>Estamos felizes em receber você na Miau-Au, sua loja virtual dedicada ao bem-estar do seu pet! A cada mês, nosso exclusivo serviço de assinatura da Miau-Au Box traz uma seleção cuidadosamente escolhida de brinquedos e acessórios para o seu pet.</p>
+            <p>Nossos produtos são pensados para estimular a curiosidade e a atividade dos gatos e cachorros, promovendo não só diversão, mas também saúde física e mental. Desde bolinhas de lã até catnip, ossos e brinquedos interativos, cada caixa é uma nova aventura para seu amigo peludo!</p>
+            <p>Curiosidade: Você sabia que brincar é essencial para o desenvolvimento e bem-estar do seu pet? Brincadeiras ajudam a manter a forma física e a evitar o tédio, que pode levar a comportamentos indesejados. Com a Miau-Au Box, você garante que seu melhor amigo esteja sempre entretido!</p>
+            <p>Explore nosso site para descobrir mais sobre nossos produtos e como você pode melhorar a qualidade de vida deles! Aqui todos os pets são tratados como verdadeiros reis e rainhas!</p>
+        </section>
+        <aside>
+            <div class="relacionados">
+                <h3>Links Relacionados</h3>
+                <ul>
+                    <li><a href="#">Dicas de cuidados com seu pet</a></li>
+                    <li><a href="#">Os melhores brinquedos para gatos</a></li>
+                    <li><a href="#">Aventuras de Gatos: Histórias Engraçadas</a></li>
+                    <li><a href="#">Curiosidades sobre cachorros</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <div class="carousel">
+        <img id="carouselImage" src="https://via.placeholder.com/600x300?text=Cat+Toy+1" alt="Brinquedo 1">
+    </div>
+    <footer>
+        <p>&copy; 2024 Miau-Au Loja Virtual - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const images = [
+            {
+                src: 'https://www.hartz.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2018/10/3270015690_hartz_just_for_cats_super_hunters_variety_pack_cat_toy_side_898x562.jpg.webp',
+                alt: 'Gato brincando com bolinha'
+            },
+            {
+                src: 'https://media.cnn.com/api/v1/images/stellar/prod/best-cat-toys-cnnu-2.jpg?c=original',
+                alt: 'Gato cercado de brinquedos'
+            },
+            {
+                src: 'https://www.fourpaws.com/-/media/Project/OneWeb/FourPaws/Images/articles/family-matters/dog-playtime/dog-playtime-927x388.jpg',
+                alt: 'Gato brincando com bolinha'
+            },
+            {
+                src: 'https://images.ctfassets.net/82d3r48zq721/5YK05AqJeLfj8yI0eTkiDn/663a34a2419966083f2ca437639ead62/Cat-playing-with-toy_resized.jpg?w=800&q=50',
+                alt: 'Gato deitado com penugem de brinquedo'
+            },
+            {
+                src: 'https://icatcare.org/app/uploads/2022/04/AdobeStock_229205523-copy-1200x630.jpg',
+                alt: 'Filhote brincando'
+            },
+            {
+                src: 'https://miro.medium.com/v2/resize:fit:2000/1*rnRDOjGuPaRpoetcAoZxHA.png',
+                alt: 'Cachorro deitado feliz'
+            }
+        ];
+        let currentIndex = 0;
+        function changeImage() {
+            const carouselImage = document.getElementById('carouselImage');
+            currentIndex = (currentIndex + 1) % images.length;
+            carouselImage.src = images[currentIndex].src;
+            carouselImage.alt = images[currentIndex].alt;
+        }
+        window.onload = () => {
+            const carouselImage = document.getElementById('carouselImage');
+            carouselImage.src = images[currentIndex].src;
+            carouselImage.alt = images[currentIndex].alt;
+            setInterval(changeImage, 3000);
+        };
+    </script>
+</body>
+</html>

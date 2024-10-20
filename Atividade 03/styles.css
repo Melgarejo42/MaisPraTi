@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://png.pngtree.com/background/20210715/original/pngtree-simple-cute-cat-paw-background-picture-image_1282055.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://t4.ftcdn.net/jpg/02/69/47/89/360_F_269478900_EEEXPJa7ohrxraL6L6V2GlmltteALheQ.jpg');
+    background-color: #9CAFAA;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(109, 72, 72);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+.header-text {
+    color: rgb(144, 106, 69);
+    padding-top: 0;
+    margin-top: -40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: #573312;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px;
+    border: 2px solid #ada59d;
+    border-radius: 10px;
+    background-color: rgb(216, 198, 198);
+}
+
+.header-text a:hover {
+    text-decoration: none;
+    background-color: #dddada;
+    color: #79844f;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+section {
+    flex: 0 0 70%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(78, 52, 34);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 30px 20px 40px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+aside {
+    flex: 0 0 30%;
+    padding: 20px;
+    overflow: auto;
+    text-align: left;
+    width: 30%;
+    position: relative;
+    z-index: 0;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    max-width: 600px;
+    margin: 30px auto 60px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.relacionados {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0d791;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.12);
+    margin: 25px 0;
+}
+
+.relacionados h3 {
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.relacionados ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.relacionados li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.relacionados a {
+    text-decoration: none;
+    color: #1f9173;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 30px;
+    border-radius: 30px;
+}
+
+.relacionados a:hover {
+    text-decoration: none;
+    background-color: #c9dcbc;
+    color: #6b961c;
+}
