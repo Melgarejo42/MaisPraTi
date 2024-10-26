@@ -183,9 +183,10 @@ img {
     color: #6b961c;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     body {
         font-size: 1rem;
+        overflow-x: hidden;
     }
 
     header {
@@ -209,9 +210,9 @@ img {
     nav ul {
         flex-direction: row;
         padding: 0px;
-        gap: 30px;
-        margin-top: 170px;
-        margin-bottom: 10px;
+        gap: 10px;
+        margin-top: 160px;
+        margin-bottom: 0px;
     }
 
     main {
