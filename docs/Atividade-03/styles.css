@@ -40,6 +40,10 @@ header {
     height: 400px;
 }
 
+.header-background {
+    background-image: url('https://t4.ftcdn.net/jpg/02/69/47/89/360_F_269478900_EEEXPJa7ohrxraL6L6V2GlmltteALheQ.jpg');
+}
+
 .header-text {
     color: rgb(144, 106, 69);
     margin-top: -40px;
@@ -64,6 +68,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -178,7 +183,7 @@ img {
     }
 
     header {
-        padding: 20px;
+        padding: 40px;
         height: auto;
     }
 
@@ -189,13 +194,16 @@ img {
 
     .header-text {
         text-align: center;
-        padding: 10px;
-        margin: 0;
+        padding: 0;
+        margin: 10px;
     }
 
     nav ul {
-        flex-direction: column;
-        padding: 10px 0;
+        flex-direction: row;
+        padding: 0px;
+        gap: 30px;
+        margin-top: 170px;
+        margin-bottom: 10px;
     }
 
     main {
@@ -205,17 +213,17 @@ img {
     }
 
     section {
-        width: 80%;
+        width: 75%;
         margin: 10px 20px;
     }
 
     aside {
-        width: 90%;
+        width: 85%;
         margin: 0 20px;
     }
 
     .carousel {
         height: 200px;
-        max-width: 90%;
+        max-width: 85%;
     }
 }
