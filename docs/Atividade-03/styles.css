@@ -191,7 +191,7 @@ img {
 
     header {
         padding: 20px;
-        margin-top: -40px;
+        margin-top: -20px;
         margin-bottom: 10px;
         height: auto;
     }
@@ -199,6 +199,7 @@ img {
     .header-container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .header-text {
@@ -219,6 +220,7 @@ img {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        width: 100%;
     }
 
     section {
