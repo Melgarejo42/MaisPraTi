@@ -194,6 +194,7 @@ img {
         margin-top: -20px;
         margin-bottom: 10px;
         height: auto;
+        overflow-x:  hidden;
     }
 
     .header-container {
