@@ -93,7 +93,7 @@ nav li {
 
 section {
     flex: 0 0 70%;
-    border: 1px solid rgba(0, 0, , 0.5);
+    border: 1px solid rgba(0, 0, 0.5);
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.7);
     color: rgb(78, 52, 34);
