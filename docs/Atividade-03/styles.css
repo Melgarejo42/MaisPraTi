@@ -46,6 +46,8 @@ header {
     display: flex;
     align-items: center;
     color: rgb(144, 106, 69);
+    position: fixed;
+    width: auto;
 }
 
 .header-text a {
@@ -90,7 +92,6 @@ nav {
     flex-wrap: wrap;
     background-color: rgba(122, 156, 136, 0.8);
     height: 70px;
-    position: fixed;
     top: 0;
     left: 0;
     margin: 0;
@@ -107,6 +108,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 nav li {
@@ -242,7 +244,8 @@ img {
         align-items: center;
         height: 100px;
         overflow-x: hidden;
-        width: 100%;
+        width: auto;
+        position: fixed;
     }
 
     .header-text a {
@@ -265,9 +268,7 @@ img {
     nav {
         height: 50px;
         padding: 5px 0;
-        position: fixed;
         overflow-x: hidden;
-        width: 100%;
     }
 
     nav ul {
