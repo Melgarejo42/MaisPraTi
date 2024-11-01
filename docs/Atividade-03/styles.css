@@ -47,7 +47,8 @@ header {
     align-items: center;
     color: rgb(144, 106, 69);
     position: fixed;
-    width: auto;
+    width: 100%;
+    overflow-y: hidden;
 }
 
 .header-text a {
