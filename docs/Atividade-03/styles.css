@@ -218,13 +218,13 @@ img {
     body {
         font-size: 1rem;
         overflow-x: hidden;
-        width: 100%;
         margin: 0;
         padding: 0;
+        max-width: 100%;
     }
 
     header {
-        padding: 20px;
+        padding: 0px;
         overflow-x:  hidden;
         height: 400px;
     }
