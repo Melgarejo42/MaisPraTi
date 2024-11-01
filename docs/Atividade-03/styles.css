@@ -239,7 +239,7 @@ img {
     .header-text {
         display: flex;
         padding: 0;
-        align-items: flex-start;
+        align-items: center;
         height: 100px;
         overflow-x: hidden;
         width: 100%;
@@ -276,7 +276,6 @@ img {
     }
 
     nav li {
-        margin: 0 5px;
         height: auto;
     }
 
