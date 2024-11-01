@@ -267,6 +267,7 @@ img {
         padding: 5px 0;
         position: fixed;
         overflow-x: hidden;
+        width: 100%;
     }
 
     nav ul {
@@ -286,12 +287,14 @@ img {
     }
 
     section {
-        width: 80%;
+        width: auto;
+        padding: 20px;
         overflow-x: hidden;
     }
 
     aside {
-        width: 85%;
+        width: auto;
+        padding: 20px;
         overflow-x: hidden;
     }
 
