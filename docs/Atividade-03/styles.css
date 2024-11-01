@@ -66,17 +66,20 @@ header {
 .header-title {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     background-color: white;
     width: 100%;
-    height: 160px;
+    height: 220px;
+    margin-top: -40px;
 }
 
 .h1-title {
     font-family: 'DynaPuff', cursive;
+    align-items: center;
     font-size: 2.8rem;
     color: rgb(112, 140, 156);
     text-shadow: 1px 2px 2px #000000;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 nav {
@@ -84,7 +87,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(122, 156, 136);
+    background-color: rgba(122, 156, 136, 0.8);
     height: 70px;
     position: fixed;
     margin: 0;
@@ -211,25 +214,18 @@ img {
     }
 
     header {
-        padding: 40px;
-        margin-top: 50px;
-        margin-bottom: 10px;
+        padding: 20px;
         overflow-x:  hidden;
         height: 400px;
     }
 
     .header-title {
-        height: 200px;
-
+        height: 300px;
     }
 
     .h1-title {
-        align-items: center;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        margin-top: 150px;
     }
 
     .header-text {
@@ -245,7 +241,7 @@ img {
         color: #573312;
         font-weight: bold;
         transition: color 0.3s ease, background-color 0.3s ease;
-        padding: 8px 12px;
+        padding: 6px 12px;
         border: 2px solid #807870;
         border-radius: 10px;
         background-color: rgb(217, 204, 204);
@@ -265,8 +261,6 @@ img {
         margin: 0;
         flex-direction: row;
         padding: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
     }
 
     nav li {
@@ -277,7 +271,6 @@ img {
     main {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
     }
 
     section {
