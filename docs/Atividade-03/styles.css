@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -96,6 +97,7 @@ nav {
     padding: 10px 0;
     z-index: 1000;
     width: 100%;
+    overflow-x: hidden;
 }
 
 nav ul {
@@ -126,6 +128,7 @@ section {
     margin: 20px 30px 20px 40px;
     font-size: 1.2rem;
     line-height: 1.5;
+    width: 100%;
 }
 
 aside {
@@ -133,9 +136,10 @@ aside {
     min-width: 200px;
     max-width: 400px;
     padding: 20px;
-    overflow: auto;
+    overflow-x: hidden;
     text-align: left;
     position: relative;
+    width: 100%;
 }
 
 footer {
@@ -209,14 +213,12 @@ img {
 }
 
 @media (max-width: 768px) {
-    * {
-        max-width: 100%;
-    }
-
     body {
         font-size: 1rem;
         overflow-x: hidden;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     header {
@@ -239,6 +241,8 @@ img {
         padding: 0;
         align-items: flex-start;
         height: 100px;
+        overflow-x: hidden;
+        width: 100%;
     }
 
     .header-text a {
@@ -262,6 +266,7 @@ img {
         height: 50px;
         padding: 5px 0;
         position: fixed;
+        overflow-x: hidden;
     }
 
     nav ul {
@@ -278,16 +283,19 @@ img {
     main {
         flex-direction: column;
         align-items: center;
+        overflow-x: hidden;
     }
 
     section {
         width: 75%;
         margin: 10px 20px;
+        overflow-x: hidden;
     }
 
     aside {
         width: 85%;
         margin: 0 20px;
+        overflow-x: hidden;
     }
 
     .carousel {
