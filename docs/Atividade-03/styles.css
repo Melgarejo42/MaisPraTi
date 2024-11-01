@@ -256,8 +256,13 @@ img {
         color: #6d7e1c;
     }
 
+    nav {
+        height: 50px;
+        padding: 5px 0;
+    }
 
     nav ul {
+        margin: 0;
         flex-direction: row;
         padding: 0px;
         margin-top: 0px;
