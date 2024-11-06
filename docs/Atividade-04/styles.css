@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    border-bottom: 0px solid #000000;
+    height: 100%;
+}
+
+.container-fluid {
+    background-color: rgb(38, 41, 49);
+}
+
+.navbar {
+    background-color: green;
+}
+
+.nav-link {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: rgb(254, 169, 56);
+}
+
+.btn-primary {
+    background-color: rgb(254, 169, 56);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(254, 169, 56) !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: white;
+}
+
+#banner {
+    height: 400px;
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+.swiper-container {
+    background-color: rgb(252, 236, 154);
+    position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: rgb(38, 41, 49);
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Para garantir que a imagem fique centralizada verticalmente */
+    max-height: 400px;
+    width: 100%; /* Ou um valor fixo se necessário, por exemplo, 100% para garantir que ocupe toda a largura disponível */
+}
+
+.swiper-slide img {
+    max-height: 400px;  /* Limita a altura da imagem a 400px */
+    width: auto;        /* Mantém a largura proporcional à altura */
+    object-fit: contain; /* Faz a imagem se ajustar sem cortar ou esticar */
+}
+
+#sobre {
+    background-color: rgb(254, 169, 56);
+}
+
+#produtos {
+    background-color: rgb(150, 177, 37);
+}
+
+#testemunhos {
+    background-color: rgb(198, 199, 54);
+}
+
+#contato {
+    background-color: rgb(69, 125, 0);
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Color pallete for the website: 
+Color 1: Green           rgb(69, 125, 0)
+Color 2: Green           rgb(198, 199, 54)
+Color 3: Green           rgb(150, 177, 37)
+Color 4: Orange          rgb(254, 169, 56)
+Color 5: Pastel Orange   rgb(252, 236, 154)
+
+Color 6: Dark gray       rgb(38, 41, 49)
+*/
