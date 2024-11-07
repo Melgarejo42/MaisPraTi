@@ -21,9 +21,6 @@ const swiper = new Swiper('.swiper-container', {
     }    
 });
 
-// API da Garden Flora API
-
-// URL to the Garden Flora JSON data
 // Fetch data from Fake Store API
 fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
@@ -31,12 +28,14 @@ fetch('https://fakestoreapi.com/products')
     // Access the container where products will be displayed
     const produtosContainer = document.getElementById('produtos-container');
 
-    // Loop through each product and display it
-    products.forEach(product => {
-      const productCard = document.createElement('div');
+    // Filter out electronics category
+    const produtosFiltrados = products.filter(product => product.category !== "electronics" && product.category !== "jewelery");
 
+    // Loop through each filtered product and display it
+    produtosFiltrados.forEach(product => {
+    const productCard = document.createElement('div');
+    productCard.classList.add('col-sm-6', 'col-md-4', 'col-lg-3', 'mb-4');  // Bootstrap column classes
 
-         productCard.classList.add('col-sm-6', 'col-md-4', 'col-lg-3', 'mb-4');  // Bootstrap column classes
 
       // Construct the product card HTML
       productCard.innerHTML = `

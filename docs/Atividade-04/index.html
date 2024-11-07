@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css">
     <!-- Link para o Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Link para AOS.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css">
     <!-- Link para o Swiper JS  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Estilização personalizada -->
@@ -69,10 +71,11 @@
     <div class="container">
         <h2>Sobre Nós</h2>
         <p>
-            Éramos uma empresa dedicada a oferecer os melhores produtos para jardinagem.<br>
-            Devido a mudanças na economia, hoje somos uma empresa especializada em vender roupas, jóias e alguns eletrônicos.<br>
-            Nosso compromisso é com a qualidade e a satisfação dos nossos clientes.
+            Somos uma loja online especializada em roupas masculinas e femininas, comprometida em oferecer qualidade e estilo em cada peça.<br><br>
+            Nosso catálogo é cuidadosamente selecionado para garantir que nossos clientes encontrem sempre o que procuram, com opções que atendem a todos os gostos e ocasiões.<br><br>
+            Acreditamos na importância de um atendimento dedicado e de uma experiência de compra prática e agradável. Aqui, sua satisfação é a nossa prioridade.
         </p>
+        
     </div>
 </section>
 
@@ -85,30 +88,59 @@
     </section>
 
     <section id="testemunhos" class="container-fluid">
-        <h2>Testemunhos</h2>
-        <div class="row" id="testemunhos-container">
-            <!-- Os depoimentos serão carregados dinamicamente via API -->
+        <h2 class="text-center mb-5" data-aos="fade-up">Testemunhos</h2>
+        <div class="row justify-content-center" id="testemunhos-container">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" class="card-img-top" alt="Imagem do Cliente">
+                    <div class="card-body">
+                        <h5 class="card-title">João Silva</h5>
+                        <p class="card-text">"Este produto é incrível! Recomendo para todos que gostam de jardinagem!"</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="card-img-top" alt="Imagem do Cliente">
+                    <div class="card-body">
+                        <h5 class="card-title">Maria Oliveira</h5>
+                        <p class="card-text">"Adorei a experiência de compra! O atendimento foi maravilhoso!"</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/23.jpg" class="card-img-top" alt="Imagem do Cliente">
+                    <div class="card-body">
+                        <h5 class="card-title">Carlos Pereira</h5>
+                        <p class="card-text">"Comprei várias camisetas e todas chegaram em perfeito estado. Com certeza voltarei a comprar!"</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <section id="contato" class="container-fluid">
         <h2>Contato</h2>
         <form id="form-contato">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" required>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" placeholder="exemplo@plantaterum.com.br" required>
             </div>
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="telefone">
+                <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000">
             </div>
             <div class="mb-3">
                 <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Insira aqui sua mensagem" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
@@ -116,7 +148,7 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-light text-center py-3">
-        <p>© 2024 Plantaterum. Todos os direitos reservados.</p>
+        <p>© 2024 Plantaterum.<br> Todos os direitos reservados.</p>
         <p><a href="#" class="text-light">Termos de Uso</a> | <a href="#" class="text-light">Política de Privacidade</a></p>
     </footer>
 
@@ -125,5 +157,9 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
