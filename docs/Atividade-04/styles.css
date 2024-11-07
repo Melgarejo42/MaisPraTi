@@ -120,15 +120,44 @@ footer {
 
 #produtos {
     background-color: rgb(150, 177, 37);
-    height: 500px;
-    width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
+    flex-direction: column;
 }
 
-/* #produtos .container {
-} */
+#produtos h2 {
+    text-align: center;  /* Centraliza o texto */
+    margin-top: 20px;    /* Ajusta a margem superior para dar um respiro */
+    margin-bottom: 50px; /* Dá um pouco de espaço abaixo do título */
+}
+
+
+#produtos .card {
+    max-width: 50%;  /* This will make the cards take up 50% of the width */
+    margin: auto;    /* Center the cards horizontally */
+  }
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.card-body {
+    background-color: rgb(252, 236, 154);  /* Um tom claro para o fundo */
+}
+  
+.card-title {
+    color: #2a9d8f;  /* Um verde suave */
+}
+
+.card {
+    transition: all 0.3s ease-in-out;  /* Faz com que a animação seja suave */
+}
+  
+.card:hover {
+    transform: scale(1.1);  /* Aumenta o card 10% */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);  /* Aumenta a sombra */
+}
 
 #testemunhos {
     background-color: rgb(198, 199, 54);

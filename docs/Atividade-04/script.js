@@ -24,37 +24,35 @@ const swiper = new Swiper('.swiper-container', {
 // API da Garden Flora API
 
 // URL to the Garden Flora JSON data
-const API_URL = 'https://raw.githubusercontent.com/some-datasets/plant-dataset/main/plants.json';
+// Fetch data from Fake Store API
+fetch('https://fakestoreapi.com/products')
+  .then(response => response.json())
+  .then(products => {
+    // Access the container where products will be displayed
+    const produtosContainer = document.getElementById('produtos-container');
 
-async function fetchProducts() {
-    try {
-        const response = await fetch(API_URL);
-        const plants = await response.json();
-        displayProducts(plants);
-    } catch (error) {
-        console.error("Error loading product data:", error);
-    }
-}
+    // Loop through each product and display it
+    products.forEach(product => {
+      const productCard = document.createElement('div');
 
-function displayProducts(plants) {
-    const container = document.getElementById('produtos-container');
-    container.innerHTML = ''; // Clear container
 
-    plants.forEach(plant => {
-        const productHTML = `
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">${plant.name}</h5>
-                        <p class="card-text">${plant.description || "No description available."}</p>
-                    </div>
-                </div>
-            </div>
-        `;
-        container.innerHTML += productHTML;
+         productCard.classList.add('col-sm-6', 'col-md-4', 'col-lg-3', 'mb-4');  // Bootstrap column classes
+
+      // Construct the product card HTML
+      productCard.innerHTML = `
+        <div class="card">
+          <img src="${product.image}" class="card-img-top" alt="${product.title}">
+          <div class="card-body">
+            <h5 class="card-title">${product.title}</h5>
+            <p class="card-text">${product.description.substring(0, 100)}...</p>
+            <p class="card-text"><strong>$${product.price}</strong></p>
+            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      `;
+
+      // Append the product card to the container
+      produtosContainer.appendChild(productCard);
     });
-}
-
-// Initialize the fetching of products when the page loads
-fetchProducts();
-
+  })
+  .catch(error => console.error('Error fetching data:', error));
