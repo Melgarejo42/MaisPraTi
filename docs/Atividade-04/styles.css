@@ -58,14 +58,29 @@ header {
 }
 
 #banner {
-    height: 400px;
+    height: 600px;
     background-color: #f8f9fa;
     margin-top: 100px;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
+.swiper-container {
+    background-color: rgb(252, 236, 154);
+    position: relative;
+    height: 600px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn {
@@ -77,25 +92,12 @@ footer {
     background-color: #0056b3;
 }
 
-.swiper-container {
-    background-color: rgb(252, 236, 154);
-    position: relative;
-}
-
 .swiper-button-prev, .swiper-button-next {
     color: rgb(38, 41, 49);
 }
 
 .swiper-pagination-bullet {
     background-color: white;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Para garantir que a imagem fique centralizada verticalmente */
-    max-height: 400px;
-    width: 100%; /* Ou um valor fixo se necessário, por exemplo, 100% para garantir que ocupe toda a largura disponível */
 }
 
 .swiper-slide img {
@@ -106,7 +108,7 @@ footer {
 
 #sobre {
     background-color: rgb(254, 169, 56);
-    height: 500px;
+    height: 340px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -216,10 +218,15 @@ footer {
 
 #contato h2 {
     text-align: center; 
+    color: white;
 }
 
 #contato input, #contato select, #contato textarea {
     width: 600px;
+}
+
+#contato label {
+    color: white;
 }
 
 textarea {
@@ -237,6 +244,8 @@ footer {
     margin: 0;
     padding: 0;
     height: auto;
+    background-color: #222;
+    color: #fff;
 }
 
 footer p {
@@ -248,6 +257,14 @@ footer a {
     text-decoration: none; /* Garantir que os links não tenham margens extras */
 }
 
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------>*/
+
+
+
+
 @media (max-width: 768px) {
 
 .swiper-slide img {
@@ -257,6 +274,7 @@ footer a {
 
 .swiper-container {
     overflow: hidden;
+    height: 300px;
 }
 
 .navbar {
@@ -293,6 +311,7 @@ footer a {
 
 #sobre {
     padding: 10px;
+    height: 500px;
 }
 
 .card {
@@ -308,6 +327,15 @@ footer a {
 
 #contato {
     height: 700px;
+}
+
+#contato h2 {
+    text-align: center; 
+    color: white;
+}
+
+#contato label {
+    color: white;
 }
 
 footer {
@@ -336,13 +364,6 @@ textarea {
     max-height: 250px;
 }
 }
-
-
-
-
-
-
-
 
 
 
