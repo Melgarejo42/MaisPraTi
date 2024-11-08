@@ -101,7 +101,7 @@ header {
 }
 
 .swiper-slide img {
-    max-height: 400px;  /* Limita a altura da imagem a 400px */
+    max-height: 600px;  /* Limita a altura da imagem a 400px */
     width: auto;        /* Mantém a largura proporcional à altura */
     object-fit: contain; /* Faz a imagem se ajustar sem cortar ou esticar */
 }
