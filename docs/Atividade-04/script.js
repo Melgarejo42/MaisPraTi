@@ -62,7 +62,7 @@ fetch('https://fakestoreapi.com/products')
 const form = document.getElementById('contact-form');
 
 // Inicializa o EmailJS
-emailjs.init('ATv4Gla6Yy_Cuv7gK'); // Substitua "YOUR_PUBLIC_KEY" pela sua chave pública
+emailjs.init('ATv4Gla6Yy_Cuv7gK');
 
 // Função para enviar o formulário usando EmailJS
 function sendEmail(templateParams) {
@@ -112,14 +112,18 @@ function validateForm(event) {
 
   // Verifica se o formulário é válido
   if (form.checkValidity()) {
+
+  // Extrair o primeiro nome
+  const firstName = name.split(" ")[0];
+
     // Enviar os dados do formulário via EmailJS
     const templateParams = {
-      nome: name,
+      name: name,
       email: email,
-      telefone: phone,
-      mensagem: message
+      phone: phone,
+      message: message,
+      from_name: firstName
     };
-    console.log(templateParams);
     sendEmail(templateParams); // Envia apenas se a validação estiver OK
   } else {
     form.reportValidity(); // Exibe as mensagens de erro personalizadas
