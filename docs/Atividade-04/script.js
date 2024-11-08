@@ -55,3 +55,77 @@ fetch('https://fakestoreapi.com/products')
     });
   })
   .catch(error => console.error('Error fetching data:', error));
+
+
+
+// Seleciona o formulário
+const form = document.getElementById('contact-form');
+
+// Inicializa o EmailJS
+emailjs.init('ATv4Gla6Yy_Cuv7gK'); // Substitua "YOUR_PUBLIC_KEY" pela sua chave pública
+
+// Função para enviar o formulário usando EmailJS
+function sendEmail(templateParams) {
+    emailjs.send('service_vue5h36', 'template_w5yhswc', templateParams)
+      .then(function(response) {
+        alert("Formulário enviado com sucesso!");
+        form.reset(); // Reseta o formulário após o envio
+      })
+      .catch(function(error) {
+        alert("Erro ao enviar o formulário: " + JSON.stringify(error));
+      });
+}
+
+// Função para validar o formulário
+function validateForm(event) {
+  event.preventDefault(); // Impede o envio do formulário caso haja erro
+
+  // Obtém os valores dos campos
+  const name = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('telefone').value;
+  const message = document.getElementById('mensagem').value;
+
+  // Limpa mensagens anteriores
+  document.getElementById('nome').setCustomValidity('');
+  document.getElementById('email').setCustomValidity('');
+  document.getElementById('telefone').setCustomValidity('');
+  document.getElementById('mensagem').setCustomValidity('');
+
+  // Validação de campos obrigatórios e mensagens personalizadas
+  if (!name) document.getElementById('nome').setCustomValidity('Por favor, preencha seu nome.');
+  if (!email) document.getElementById('email').setCustomValidity('Por favor, preencha seu e-mail.');
+  if (!phone) document.getElementById('telefone').setCustomValidity('Por favor, preencha seu telefone.');
+  if (!message) document.getElementById('mensagem').setCustomValidity('Por favor, preencha a mensagem.');
+
+  // Validação de formato de email
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (email && !emailPattern.test(email)) {
+    document.getElementById('email').setCustomValidity('Por favor, insira um e-mail válido.');
+  }
+
+  // Validação de telefone (apenas números)
+  const phonePattern = /^[0-9]{10,11}$/;
+  if (phone && !phonePattern.test(phone)) {
+    document.getElementById('telefone').setCustomValidity('Por favor, insira um telefone válido.');
+  }
+
+  // Verifica se o formulário é válido
+  if (form.checkValidity()) {
+    // Enviar os dados do formulário via EmailJS
+    const templateParams = {
+      nome: name,
+      email: email,
+      telefone: phone,
+      mensagem: message
+    };
+    console.log(templateParams);
+    sendEmail(templateParams); // Envia apenas se a validação estiver OK
+  } else {
+    form.reportValidity(); // Exibe as mensagens de erro personalizadas
+  }
+}
+
+// Adiciona o evento de submissão ao formulário
+form.addEventListener('submit', validateForm);
+

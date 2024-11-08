@@ -15,8 +15,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css">
     <!-- Link para o Swiper JS  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ATv4Gla6Yy_Cuv7gK",
+      });
+   })();
+</script>
     <link rel="stylesheet" href="styles.css"> <!-- Estilização personalizada -->
 </head>
+
 <body>
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -95,7 +106,7 @@
                     <img src="https://randomuser.me/api/portraits/men/45.jpg" class="card-img-top" alt="Imagem do Cliente">
                     <div class="card-body">
                         <h5 class="card-title">João Silva</h5>
-                        <p class="card-text">"Este produto é incrível! Recomendo para todos que gostam de jardinagem!"</p>
+                        <p class="card-text">"Este produto é incrível! Recomendo para todos!"</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +136,7 @@
 
     <section id="contato" class="container-fluid">
         <h2>Contato</h2>
-        <form id="form-contato">
+        <form id="contact-form">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
