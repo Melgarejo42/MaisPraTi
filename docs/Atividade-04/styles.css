@@ -93,15 +93,15 @@ header {
 }
 
 .swiper-button-prev, .swiper-button-next {
-    color: rgb(38, 41, 49);
+    color: rgb(0, 0, 0);
 }
 
 .swiper-pagination-bullet {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .swiper-slide img {
-    max-height: 600px;  /* Limita a altura da imagem a 400px */
+    max-height: 530px;  /* Limita a altura da imagem a 400px */
     width: auto;        /* Mantém a largura proporcional à altura */
     object-fit: contain; /* Faz a imagem se ajustar sem cortar ou esticar */
 }
