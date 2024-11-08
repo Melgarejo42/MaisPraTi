@@ -330,12 +330,11 @@ footer a {
     width: 300px;
 }
 
-.textarea {
+textarea {
     resize: none;
-    height: 400px;
+    min-height: 100px;
+    max-height: 250px;
 }
-
-
 }
 
 
