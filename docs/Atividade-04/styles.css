@@ -212,7 +212,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(69, 125, 0);
-    height: 900px;
+    height: 710px;
     padding: 40px 0 0 0;
 }
 
@@ -232,9 +232,9 @@ header {
 textarea {
     resize: vertical;
     overflow-y: auto;
-    height: 360px;
+    height: 230px;
     min-height: 100px;   
-    max-height: 430px;
+    max-height: 230px;
 }
 
 footer {
@@ -326,7 +326,7 @@ footer a {
 }
 
 #contato {
-    height: 700px;
+    height: 710px;
 }
 
 #contato h2 {
