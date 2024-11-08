@@ -233,7 +233,7 @@ header {
 textarea {
     resize: vertical;
     overflow-y: auto;
-    height: 230px;
+    height: 150px;
     min-height: 100px;   
     max-height: 230px;
 }
