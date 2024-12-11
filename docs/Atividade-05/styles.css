@@ -1,0 +1,13 @@
+.custom-bg {
+    background-color: #9fa3ab;
+    color: black; 
+}
+
+.custom-bg::placeholder {
+    color: white;
+}
+
+.custom-bg:focus {
+    background-color: #9fa3ab;
+    color: black;
+}

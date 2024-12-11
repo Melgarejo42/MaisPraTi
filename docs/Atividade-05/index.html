@@ -11,9 +11,26 @@
     <title>Atividade 05 (toDoApp)</title>
 </head>
 <body class="bg-dark text-light p-3">
-    <h1>Iniciando página</h1>
+    
+ 
+        <div class="container">
+            <h1 class="text-center mb-4">Lista de tarefas</h1>
+            
+            <!-- Entrada de dados -->
+            <div class="d-flex justify-content-center mb-2">
+                <input id="taskInput" type="text" class="form-control mb-2 mr-2 w-50 text-center custom-bg" placeholder="Digite uma nova tarefa"> 
+                <button id="addTaskBtn" class="btn btn-primary w-25 h-25">Adicionar</button>
+            </div>
 
+            <!-- Lista de Tarefas -->
+            <div class="d-flex justify-content-center">
+                <ul id="taskList" class="list-group w-50 bg-dark text-light">
+                </ul>
+            </div>
 
+        </div>
+
+<script src="script.js"></script>
     <!-- jQuery, Popper.js e Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
